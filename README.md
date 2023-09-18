@@ -72,7 +72,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 After the installation, test it out using a small python code.
 
 ```powershell
-python -c "import torch; print('CUDA Enabled: ' + str(torch.cuda.is_available()));print('CUDA version: ' + torch.version.cuda)"
+python -c "import torch; print(torch.cuda.is_available());print(torch.version.cuda)"
 ```
 
 It shall display:
