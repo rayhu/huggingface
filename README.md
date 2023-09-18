@@ -31,10 +31,10 @@ nvcc --version
 The packages and dependencies are included in a conda lock file for reproducibility.
 
 ```powershell
-conda create --name huggingface --file conda-win-64.lock
+conda create --name huggingface --file conda-explicit.txt
 ```
 
-There are several files can be found in the root of the repo to restore the env. You can restore using any of the files.
+There are two files can be found in the root of the repo to restore the env. You can restore using any of the files.
 
 * conda-explicit.txt contains all the urls and some hashes. It is great for most circumstances.
 * environment.yml is more human readable. Make changes to this file if you want to change the versions of the packages.
